@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+
+<body>
+    <header class="header">
+        <div>
+            <button class="btnHeader" id="view-high-scores">View High Scores</button>
+        </div>
+        <div class="timer">
+            <div class="timerSec"></div>
+            <div class="time_left">Seconds</div>
+            
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="Question">Question</div>
+            <div id="answer-btns" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start_btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+            <button id="Exit-btn" class="Exit-btn btn hide">Exit</button>
+            
+        </div>
+        <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p class="intText">
+              Enter initials: <input class="int" type="text" id="initials" max="3" />
+              <button class="submits" id="submit">Submit</button>
+            </p>
+          </div>
+    </div>
+</body>
+<script src="assets/java.js"></script>
+
+</html>
